@@ -404,5 +404,4 @@ $$\frac{5.840}{14.873}·100=39,27\% => perfecto$$
 | 2.024         | -20,83%                    | -54,45%  | => perfecto  |
 | 2.023 - 2.024 | -29,15%                    | -63,40%  | => perfecto  |
 
-URL del repositorio en GitHub: 
-
+URL del repositorio en GitHub: https://github.com/ddasilva64/PBI/blob/master/porcentajes/
