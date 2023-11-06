@@ -32,7 +32,7 @@ El **promedio ponderado de los porcentajes** sería: $$\frac{100⋅10\%+200⋅20
 
 El promedio de los porcentajes (en nuestro ejemplo, un **20%**) es diferente al promedio ponderado de los porcentajes (en nuestro ejemplo, un **23.33%**).
 
-**El promedio y el promedio ponderado de los porcentajes coinciden, si y solo si, los porcentajes se refieren a las mismas cantidades totales**.
+**El promedio y el promedio ponderado de los porcentajes coinciden, si y solo sí, los porcentajes se refieren a las mismas cantidades totales**.
 
 Ejemplo:
 
@@ -42,7 +42,7 @@ $$\frac{100⋅10\%+100⋅20\%+100⋅30\%}{100+100+100}​=\frac{10+20+30}{300}=\
 
 **_Conclusión_**: **Como el promedio de los porcentajes cubre solo 1 caso, de $\infty$ posibles y el promedio ponderado de los porcentajes cubre todos los casos, entonces siempre se debe utilizar el promedio ponderado de los mismos**.
 
-Imaginemos que tenemos que hacer una macedonia y solo nos dan los % de las frutas sin procesar, es decir, sin saber nada del peso, ni del volumen, ni de inguna otra magnitud utilizada.  
+Imaginemos que tenemos que hacer una macedonia y solo nos dan los % de las frutas sin procesar, es decir, sin saber nada del peso, ni del volumen, ni de ninguna otra magnitud utilizada.  
 
 * 43% de una manzana  
 * 82% de una pera  
@@ -50,7 +50,7 @@ Imaginemos que tenemos que hacer una macedonia y solo nos dan los % de las fruta
 * 71% de un limón  
 * 23% de un plátano  
 
-y concluimos que hemos uilizado el:
+y concluimos que hemos utilizado el:
 
 $$\frac{43\%+82\%+63\%+71\%+23\%}{5}=\frac{282\%}{5}=56,4\%$$
 
@@ -80,7 +80,7 @@ El año 2023 tiene los siguientes datos:
 | jun | 1.320                       | 11.770                | 11,21%    |
 | jul | 1.098                       | 11.216                | 9,79%     |
 
-% total acumulado calculado intuitívamente (promedio de los porcentajes), que utiliza la dirección (actualmente) es:
+% total acumulado calculado intuitivamente (promedio de los porcentajes), que utiliza la dirección (actualmente) es:
 
 $$\frac{16,99\%+12,91\%+12,89\%+12,24\%+13,61\%+11,21\%+9,79\%}{7}=\frac{89,64}{7}=12,81\%$$ 
 
@@ -90,7 +90,7 @@ El _promedio ponderado de los porcentajes es correcto matemáticamente_:
 
 $$\frac{1.904+1.434+1.576+1.350+1.540+1.320+1.098}{11.204+11.108+12.226+11.030+11.318+11.770+11.216}​=\frac{10.222}{79.872}=12,80\%$$
 
-Pero es dicutible el valor de la información mostrada. Por otra parte, observamos que la dirección hace cálculos con los indicadores (%), olvidando las magnitudes de las que derivan, cuando lo que debiera hacer es obtener los indicadores para saber que les sucede (o puede suceder) a las magnitudes.
+Pero es discutible el valor de la información mostrada. Por otra parte, observamos que la dirección hace cálculos con los indicadores (%), olvidando las magnitudes de las que derivan, cuando lo que debiera hacer es obtener los indicadores para saber qué les sucede (o puede suceder) a las magnitudes.
 
 Imaginemos lo siguiente, para ver lo absurdo de operar con los indicadores y no con las magnitudes:
 
@@ -102,25 +102,25 @@ Entonces 9 mujeres pueden producir 1 niño al mes, porque $$9·(\frac{1}{9})=100
 
 Lo cual, es absurdo, ¿no?.😜
 
-Además los valores se construyen con conjuntos restringidos. Es decir, si consideramos el período de enero a julio, no contaremos como uno de los _artículos más demandados_ más de una vez, es decir, si un artículo fue más demandado el mes de enero y el de abril, solo lo consideraremos una vez. Además un artículo que formó parte del catálogo en enero, pero no a partir de febrero, forma parte de catálogo total, de enero a julio, pero solo una vez.  
+Además, los valores se construyen con conjuntos restringidos. Es decir, si consideramos el período de enero a julio, no contaremos como uno de los _artículos más demandados_ más de una vez, es decir, si un artículo fue más demandado el mes de enero y el de abril, solo lo consideraremos una vez. Además, un artículo que formó parte del catálogo en enero, pero no a partir de febrero, forma parte de catálogo total, de enero a julio, pero solo una vez.  
 
 O sea, estas cantidades no se pueden obtener de ninguna operación matemática, a partir de las magnitudes expresadas anteriormente, sino por restricciones sobre la BD original.
 
-Con lo cuál, la empresa nos proporciona los siguientes valores acumulados:
+Con lo cual, la empresa nos proporciona los siguientes valores acumulados:
 
 nº artículos más demandados = 6.368  
 nº artículos catálogo       = 16.714  
 
 y calculando el porcentaje: $$\frac{6.368}{16.714}=38,10\%$$  
 
-¡¡¡Oh Diós mío, ¿¿¿qué es esto???!!!.😮😮😮 Pues, estimado/a lector/a, esto es la **_conjetura FG_** en acción:
+¡¡¡Oh Dios mío, ¿¿¿qué es esto???!!!.😮😮😮 Pues, estimado/a lector/a, esto es la **_conjetura FG_** en acción:
 
 > **_La vida es como una caja de bombones, nunca sabes lo que te va a tocar  
 (Forrest Gump)_**
 
 Lo que ha sucedido es que si se tuviesen en cuenta las restricciones (en el período seleccionado), en el cual que hemos considerado el cálculo, este sería el promedio ponderado de los porcentajes. Pero con las restricciones, que hemos contemplado, se ha complicado el cálculo.
 
-La pregunta que nos hacemos es: ¿Este propedio ponderado de magnitudes acumuladas sirve para algo (a parte de para jugar con los números)?. Antes de responder pensemos en el negocio de nuestro cliente y lo que realmente quiere conseguir 🤔.
+La pregunta que nos hacemos es: ¿Este promedio ponderado de magnitudes acumuladas sirve para algo (aparte de para jugar con los números)?. Antes de responder pensemos en el negocio de nuestro cliente y lo que realmente quiere conseguir 🤔.
 
 En este momento consideramos el primer precepto de la 4ª Revolución Industrial: **"El cliente en el centro"**.👈
 
@@ -130,7 +130,7 @@ Para ello, vamos a introducir el concepto de **variación en el crecimiento de l
 
 Para hacer este cálculo, nos trasladamos al futuro e imaginamos los valores hasta el 31 de diciembre de 2024. Ahora estamos en noviembre de 2023.
 
-Además, consideremos la siguiente fórmula para calcula la variación de la magnitid:
+Además, consideremos la siguiente fórmula para calcular la variación de la magnitud:
 
 $$Variación=100+((\frac{V_2 - V_1}{V_1})·100)$$
 
@@ -280,7 +280,7 @@ El catálogo se ha incrementado en 2.023, aunque ha disminuido el número de art
 
 El primer semestre de 2.024, aunque se ha continuado reduciendo el nº de artículos más demandados, se ha disminuido mucho el catálogo, o sea, estamos reaccionando adecuadamente (👍).
 
-El año 2.024, en su conjunto, hemos reducido a menos de la mitad nuestro catálogo y hemos reducido mucho el ritmo de decrecimiento el nº de artículos más demandados, o sea, estamos reaccionando perfectamente (👌).
+El año 2.024, en su conjunto, hemos reducido a menos de la mitad nuestro catálogo y hemos reducido mucho el ritmo de decrecimiento del nº de artículos más demandados, o sea, estamos reaccionando perfectamente (👌).
 
 En conjunto, gracias a las acciones correctivas que nos han permitido tomar estos indicadores, estamos reaccionando adecuadamente (👍).
 
@@ -298,7 +298,7 @@ Para el 2.024 tenemos:
 
 y calculando el porcentaje: $$\frac{5.840}{14.873}·100=39,27\%$$ 
 
-Lo cual nos indica que, tal como intuímos con el el indicador de la variación, estamos aumentado el peso de los artículos con más demanda en nuestro catálogo, al tiempo que disminuimos el catálogo (👍).
+Lo cual nos indica que, tal como intuimos con el indicador de la variación, estamos aumentando el peso de los artículos con más demanda en nuestro catálogo, al tiempo que disminuimos el catálogo (👍).
 
 Pero, ¿cómo podemos presentar esta información de manera que sea inteligible? 😬
 
@@ -308,8 +308,8 @@ Primero, **cambiamos** el **sobrero de Matemático** por el **sombrero de Analis
 
 - **_Dimensión de Tiempo_**: Fecha (granularidad de año y mes)  
 - **_Dimensión de Referencias_**: No incluida en este ejemplo (nos la tenemos que creer). En esta tabla estarán todos los artículos, vivos o muertos, es decir, que formen o hayan formado parte del catálogo (en el período considerado).
-- **_Hechos agregados_**: Fecha, nº artículos más demandados, nº artículos de catalogo.
-- **_Hechos agregados anual_**: Fecha, nº artículos más demandados acumulado, nº artículos de catalogo acumulado.
+- **_Hechos agregados_**: Fecha, nº artículos más demandados, nº artículos de catálogo.
+- **_Hechos agregados anual_**: Fecha, nº artículos más demandados acumulado, nº artículos de catálogo acumulado.
 
 **_¡Atención!_**: La granularidad de la dimensión relacionada, coincide con la granularidad de los hechos y no se relacionan dos tablas de hechos directamente (axiomas del diseño dimensional).
 
@@ -350,7 +350,7 @@ En un lugar destacado mostraremos el promedio ponderado de las magnitudes (calcu
 
 **_Nota muy importante_**: Para poder mostrar este valor debemos tener un paso ETL que nos genere una tabla con los valores agregados mensuales.
 
-En un lugar destacado, pero en texto, y con algún tipo de texto explicativo mostramos:
+En un lugar destacado, pero en texto, y con algún tipo de texto explicativo, mostramos:
 
 - **_Promedio ponderado absoluto del período_**  
 - **_Variación del nº artículos más demandados_**  
@@ -370,7 +370,7 @@ La dimensión de tiempo la montaremos automáticamente en PBI Desktop.
 ![Modelo de datos del proto](https://i.imgur.com/u8HTWX3.png)
 _Modelo de datos del proto_
 
-La conmutación de los visuales y el popup informatico se hará de la manera estándard, con bookmarks.
+La conmutación de los visuales y el popup informativo se hará de la manera estándar, con bookmarks.
 
 ![Indicadores](https://i.imgur.com/dAQEJM6.png)  
 _Indicadores_
