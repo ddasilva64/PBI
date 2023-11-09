@@ -150,11 +150,9 @@ Variación&=100+((\frac{V_2 - V_1}{V_1})·100)\\
 &=100+((\frac{1.320 - 1.904}{1.904})·100)\\
 &=100+((\frac{-584}{1.904})·100)\\
 &=100+(-30,67)\%\\
-&=69,33\%\\
+&=69,33\%\\\\
 \end{aligned}
 $$
-
-
 
 **_Resultado_**: el nº artículos más demandados **_se ha reducido en un 30,67%, al 69,33%_** 👈 **_de enero a junio de 2.023_**
 
