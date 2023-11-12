@@ -1,4 +1,20 @@
-# Caso de uso: Diferencia entre media de los porcentajes y porcentaje promedio en BI
+# Calcular adecuadamente porcentajes y BI (Business Intelligence)
+
+No hay una manera mejor de calcular porcentajes en BI (Business Intelligence), pero si que hay una manera adecuada de calcular y operar con porcentajes y también diferentes maneras de solucionar este problema en BI.
+
+Todos tenemos un conocimiento intuitivo del cálculo de un porcentaje, pero _nuestra intuición falla cualdo operamos con porcentajes_ y sobre este error, en ocasiones, nos complicamos la vida a la hora de visualizar el cálculo en BI.
+
+**_¡Atención!_**: _Los errores nunca se suman, sino que se multiplican_, de manera que, sin entender la razón, _un simple cálculo con porcentajes, puede convertirse en un galimatías irresoluble, si no aplicamos la técnica adecuada.
+
+**_Herramientas empleadas_**:
+1.  **_Pentaho Data Integration_** (gratuita), aunque se supone su uso, el ETL se escapa al objetivo de este ejemplo.
+2. **_Power BI Desktop_** (gratuita).
+
+**_Pasos seguidos_**:  
+1. Obtención del **_método de cálculo matemáticamente adecuado_**.
+2. **_Resolución imaginando un ETL externo_** a la herramienta BI.
+3. **_Resolución del problema, suponiendo un ETL interno_** en la herramienta BI. Esto en **_Power BI_** lo resolveríamos en **_Power Query_**. En este caso utilizaremos lenguaje **_DAX_**.
+
 
 ## Teoría
 
@@ -503,5 +519,53 @@ $$\frac{5.840}{14.873}·100=39,27\% => perfecto$$
 | ene-jun 2.024 | -34,27%                    | -27,03%  | => perfecto  |
 | 2.024         | -20,83%                    | -54,45%  | => perfecto  |
 | 2.023 - 2.024 | -29,15%                    | -63,40%  | => perfecto  |
+
+Agregamos la solución en **_DAX_** (medidas), bien realizada, sin desarrollar el ejemplo, porque va más allá del objetivo de este post:
+
+**_Promedio ponderado indicador más demandados por fecha_** = 
+
+    VAR dblArticulosCatalogo = AVERAGEX(
+        KEEPFILTERS(VALUES('DimDates'[Date])),
+        CALCULATE([nro articulos catalogo])
+    )
+
+
+    VAR dblArticulosMasDenadados = AVERAGEX(
+        KEEPFILTERS(VALUES('DimDates'[Date])),
+        CALCULATE([nro articulos mas demandados])
+    )
+
+    VAR dblResultado    = DIVIDE(dblArticulosMasDenadados,dblArticulosCatalogo,"")
+
+    Return  
+        dblResultado
+
+----------------------------
+
+**_nro articulos catalogo_** =   
+
+    CALCULATE(
+        DISTINCTCOUNT(Referencias[ID_ARTICULO])
+    )
+
+----------------------------
+
+**_nro articulos mas demandados_** =  // Imaginemos un top ten
+    
+    VAR VentasPorProducto =
+        SUMMARIZE(
+            Ventas;
+            Referencias[ID_ARTICULO];
+            "Ventas"; SUM(Ventas[Importe])
+        )
+
+    VAR dblResultado =
+        TOPN(
+            10;
+            VentasPorProducto;
+            [Ventas]
+        )
+    RETURN
+        dblResultado
 
 URL del repositorio en GitHub: https://github.com/ddasilva64/PBI/blob/master/porcentajes/
